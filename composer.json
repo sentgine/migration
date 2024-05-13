@@ -1,7 +1,8 @@
 {
     "name": "sentgine/migration",
-    "description": "A standalone database migration library.",
+    "description": "A standalone database migration library for PHP.",
     "type": "library",
+    "keywords": ["database", "migration", "mysql", "php"],
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -19,6 +20,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": "^8.2",
         "sentgine/arise": "^2.0.0"
     },
     "require-dev": {
