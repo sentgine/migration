@@ -1,0 +1,22 @@
+<?php
+require __DIR__ . '/../file/src/Filesystem.php';
+
+use Sentgine\File\Filesystem;
+
+try {
+    // Initialize a new instance of the Filesystem class
+    $filesystem = new Filesystem();
+
+    // Read the content from the source file
+    $content = $filesystem->setSourceFile(__DIR__ . '/src/Stubs/arise.stub')->read();
+
+    // Create a new file with the content at the destination path
+    $filesystem->setDestinationFile(getcwd() . '/arise')->create($content);
+
+    // Output a success message
+    echo "\n==== Arise Command - Initialized ====";
+} catch (\Exception $e) {
+    // Output an error message if an exception occurs
+    echo "\n==== Arise Command ====";
+    echo "\n" . $e->getMessage();
+}

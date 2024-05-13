@@ -1,0 +1,27 @@
+<?php
+
+use Sentgine\Migration\TableBuilder\{{ class_name }};
+use Sentgine\Migration\Facades\Schema;
+use Sentgine\Migration\TableMigrationHandler;
+
+return new class extends TableMigrationHandler
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('{{ table_name }}', function ({{ class_name }} $table) {
+            $table->increments('id');
+          
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::drop('{{ table_name }}');  
+    }
+};

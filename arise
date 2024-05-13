@@ -1,0 +1,26 @@
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Sentgine\Arise\Command;
+
+$application = new Application();
+$application->setName('Arise');
+$application->setVersion('v1.0.0');
+
+// Arise Default Commands. Do not remove.
+Command::register(
+    appInstance: $application,
+    directory: __DIR__ . '/vendor/sentgine/arise/src/Commands',
+    namespace: 'Sentgine\\Arise\\Commands\\'
+);
+
+// Register your migrations files.
+Command::register(
+    appInstance: $application,
+    directory: __DIR__ . '/src/Commands',
+    namespace: 'Sentgine\\Migration\\Commands\\'
+);
+
+$application->run();

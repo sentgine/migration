@@ -1,0 +1,32 @@
+{
+    "name": "sentgine/migration",
+    "description": "A standalone database migration library.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sentgine\\Migration\\": "src/"
+        },
+        "files": [
+			"functions/core.php"
+    	]
+    },
+    "authors": [
+        {
+            "name": "Adrian Navaja",
+            "email": "sentgine@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "sentgine/arise": "^2.0.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "2.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

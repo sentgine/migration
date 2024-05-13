@@ -1,0 +1,5 @@
+vendor
+tests/temp
+.vscode
+/node_modules
+TodoList.txt

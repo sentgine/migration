@@ -1,0 +1,25 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Database Configuration
+|--------------------------------------------------------------------------
+|
+| This configuration file specifies database connections used within
+| the application. It defines a default connection and multiple named
+| connections, each with its own set of configuration parameters.
+|
+*/
+
+return [
+    'defaultConnection' => 'database1',
+    'connections' => [
+        'database1' => [
+            'driver'   => 'mysql',
+            'host'     => 'localhost',
+            'database' => 'test',
+            'username' => 'root',
+            'password' => '',
+        ],
+    ]
+];
