@@ -20,7 +20,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^8.2",
+        "php": "^8.0.0",
         "sentgine/arise": "^2.0.0"
     },
     "require-dev": {
