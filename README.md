@@ -16,7 +16,6 @@ This PHP tool represents a standalone migration script for creating and altering
 ## Available Commands
 
 - **migrate**: Run the database migrations.
-- **make:command**: Create a new command.
 - **make:migration**: Create a migration file.
 - **migrate:fresh**: Drop all tables and re-run all migrations.
 - **migrate:rollback**: Rollback the last database migration.
