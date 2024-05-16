@@ -20,7 +20,6 @@ This PHP tool represents a standalone migration script for creating and altering
 - **migrate:fresh**: Drop all tables and re-run all migrations.
 - **migrate:rollback**: Rollback the last database migration.
 
-
 (1) You can install the package via Composer to your existing PHP project by running the following command:
 
 ```bash
